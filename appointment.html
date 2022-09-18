@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <title>NH CUSTOM TATTOO CONSULTATION</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <!-- ============ Main Header - START ============ -->
+
+            <header id="master-header">
+                <div class="top-header">
+
+                    <div class="container">
+
+                        <h1 id="logo">
+                            <a href="index.html">
+                                <img src="img/NH CUSTOM TATTOOx.png" alt="NH CUSTOM TATTOO">
+                            </a>
+                        </h1>
+
+                        
+                        <!-- ============ Main Navigation - START ============ -->
+
+                        <a id="nav-toggle" href="#"><span></span></a>
+                        <nav id="nav-menu">
+                            <ul>      
+                                <li><a title="About Us Page" href="about-us-1.html">About Us</a> </li>
+                                <li><a title="Portfolio" href="portfolio-4col.html">Portfolio</a></li> 
+                                <li><a title="Blog" href="blog.html">Blog</a></li> 
+                                <li><a title="Faqs &amp; Disclaimers Page" href="faq.html">Faqs</a></li>
+                                <li><a title="Contacts Page" href="contacts.html">Contacts</a></li>
+                                <li><a title="Appointment Page" href="appointment.html"><i class="fa fa-thumb-tack"></i>Appointment</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <h2 id="page-title">Schedule a Consultation <span>Now</span></h2>
+            </header>
+
+            <!-- ============ Main Header - END ============ -->
+
+            <div id="main">
+
+                     <!-- ============ Contacts Bar - START ============ -->
+
+                     <div id="contacts-bar" class="row">
+                        <div class="address col-md-6"><strong>NH Custom Tattoo</strong>, 1338 Hooksett Rd, Hooksett, NH 03106</div>
+                        <div class="other col-md-6">
+                            <span class="contact"><i class="fa fa-phone"></i>Phone: <strong>(603)-833-3458</strong></span>
+                            <span class="contact"><i class="fa fa-envelope"></i>Email: <a href="mailto:rorkiteer34@gmail.com"><strong>rorkiteer34@gmail.com</strong></a></span>
+                        </div>
+                    </div>
+    
+                    <!-- ============ Contacts Bar - END ============ -->
+
+                <div class="section">
+
+                    <div class="content container">
+
+                        <div class="col-md-4">
+
+                            <h2 class="focus-title">What type of information should I send?</h2>
+
+                            <p class="main-content">What kind of tattoo or piercing are you interested most in?  Please tell us your story and provide our staff with as much detail about your
+                                custom art as possible.  Make sure to include information about the size, desired location, type, and any color prefrences.</p>
+
+                            <p class ='bold-content'>What are you waiting for?  Reach out to one of our professional tattoo artists with any questions now!</p>
+
+                            <h3>Our Studio Location</h3>
+
+                            <div id="map"></div>
+
+                        </div>
+
+                        <!-- ============ Appointment Form - START ============ -->
+
+                        <div class="col-md-8">
+
+                            <form class="contact-form" action="mailer/appointment.php" method="post">
+
+                                <label>
+                                    <strong>First Name *</strong>
+                                    <input class="required" type="text" name="first_name">
+                                </label>
+                                <label>
+                                    <strong>Last Name *</strong>
+                                    <input class="required" type="text" name="last_name">
+                                </label>
+                                <label>
+                                    <strong>Email *</strong>
+                                    <input class="required" type="text" name="email">
+                                </label>
+                                <label>
+                                    <strong>Phone Number *</strong>
+                                    <input class="required" type="text" name="phone">
+                                </label>
+                                <label>
+                                    <strong>Part of the Body</strong>
+                                    <select class="box" name="part_body">
+                                        <option value="Leg">Leg</option>
+                                        <option value="Calf">Calf</option>
+                                        <option value="Ankle">Ankle</option>
+                                        <option value="Foot">Foot</option>
+                                        <option value="Arm">Arm</option>
+                                        <option value="Forearm">Forearm</option>
+                                        <option value="Wrist">Wrist</option>
+                                        <option value="Hand">Hand</option>
+                                        <option value="Nek">Nek</option>
+                                        <option value="Head">Head</option>
+                                        <option value="Back">Back</option>
+                                        <option value="Buttocks">Buttocks</option>
+                                        <option value="Genitals">Genitals</option>
+                                        <option class="other" value="Other">Other (Specify below)</option>
+                                    </select>
+                                </label>
+                                <label id="other" class="hidden-field">
+                                    <strong>Specific Part of Body</strong>
+                                    <input type="text" name="custom">
+                                </label>
+                                <label><strong>Tattoo Size *</strong> (ex: 5x4)
+                                    <input class="required" type="text" name="size">
+                                </label>
+                                <div class="radio label">
+                                    <strong>Tattoo Color</strong>
+                                    <label>
+                                        <input type="radio" value="Black &amp; White" name="color" checked>
+                                        <span class="radio-replacer"></span>
+                                        <span>Black &amp; White</span>
+                                    </label>
+                                    <label>
+                                        <input class="required" type="radio" value="Color" name="color">
+                                        <span class="radio-replacer"></span>
+                                        <span>Color</span>
+                                    </label>
+                                </div>
+                                <label><strong>Tattoo Description *</strong>
+                                    <textarea class="required" name="description"></textarea>
+                                </label>
+                               
+                                <hr>
+                                 <label>
+                                    <input class="required" type="checkbox" name="check">
+                                    <span class="checkbox-replacer"></span>
+                                    <strong>Check to authorize the system *</strong>
+                                </label>
+                                <hr>
+                                <p>( <strong>*</strong> ) = Mandatory field</p>
+                                <input class="submit btn md over" type="submit" name="submit" value="Request Appointment">
+                                <input type="hidden" name="form_type" value="appointment">
+
+                            </form>
+
+                        </div>
+
+                        <!-- ============ Appointment Form - END ============ -->
+
+                    </div>
+
+                </div>
+
+                <!-- ============ Instagram Banner - START ============ -->
+
+                <a class="instagram-bar" href="https://www.instagram.com/nh_custom_tattoo/">See all works on <strong>Instagram</strong>!</a>
+
+                <!-- ============ Instagram Banner - END ============ -->
+
+            </div>
+
+       
+            <!-- ============ Footer - START ============ -->
+
+            <footer class="dark">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="footer-col col-md-4 col-sm-6">
+
+                            <h3 class="focus-title">About Us</h3>
+                            <p><img width="200" class="align-center" src="img/NH CUSTOM TATTOOx.png" alt="NH CUSTOM TATTOO"></p>
+                            <p class = 'disclaimer'>Please make sure to call us immediately if you need to reschedule an appointment.  Your consideration allows us to offer the highest form of hospitality to all of our customers.</p>
+
+                        </div>
+
+                        <div class="footer-col col-md-4 col-sm-6">
+
+                            <h3 class="focus-title"><i class="fa fa-clock-o"></i>Working Days</h3>
+                            <dl class="working-days">
+                                <dt>Monday</dt>
+                                <dd>12:00 - 24:00</dd>
+                                <dt>Tuesday</dt>
+                                <dd>12:00 - 24:00</dd>
+                                <dt>Wednesday</dt>
+                                <dd>12:00 - 24:00</dd>
+                                <dt>Thursday</dt>
+                                <dd>12:00 - 24:00</dd>
+                                <dt>Friday</dt>
+                                <dd>12:00 - 24:00</dd>
+                                <dt>Saturday</dt>
+                                <dd>12:00 - 24:00</dd>
+                                <dt>Sunday</dt>
+                                <dd>12:00 - 24:00</dd>
+                            </dl>
+
+                        </div>
+
+
+                        <div class="footer-col footer-contacts col-md-4 col-sm-12">
+
+
+                                <div class="contact-item"><span>NH Custom Tattoo</span> <strong>1338 Hooksett Rd, Hooksett, NH 03106</strong></div>
+                                <div class="contact-item"><span>Phone:</span> <strong>(603)-833-3458</strong></div>
+                                <div class="contact-item"><span>Email:</span> <strong><a href="mailto:rorkiteer34@gmail.com">rorkiteer34@gmail.com</a></strong></div>
+                                <div class="contact-item">
+                                    <span>Follow us on:</span>
+                                    <ul class="social-links">
+                                        <li><a title="Facebook" href="https://www.facebook.com/nhcustomtattoo"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a title="Twitter" href="https://twitter.com/NHCustomTattoo"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a title="Instagram" href="https://www.instagram.com/nh_custom_tattoo/"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="copyright">
+                    &copy; 2022 - <strong>NH CUSTOM</strong> <br> <strong>DESIGN BY THE TATTOOIST</strong>
+                </div>
+
+            </footer>
+
+            <!-- ============ Footer - END ============ -->
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Map Scripts -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_82_D8oJU6QFvKF9fB-VBqzutqpjGolU"></script>
+        <script src="js/map.js"></script>
+
+    </body>
+</html>
